@@ -1,12 +1,12 @@
 #
 # Conditional build:
-%bcond_without	apidocs		# API documentation
+%bcond_with	apidocs		# API documentation
 #
 Summary:	Qt4 Binding Generator library
 Summary(pl.UTF-8):	Biblioteka do generowania wiązań Qt4
 Name:		apiextractor
 Version:	0.10.10
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries
 Source0:	https://github.com/PySide/Apiextractor/archive/%{version}.tar.gz?/%{name}-%{version}.tar.gz
