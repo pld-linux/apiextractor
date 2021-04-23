@@ -9,7 +9,8 @@ Version:	0.10.10
 Release:	2
 License:	GPL v2
 Group:		Libraries
-Source0:	https://github.com/PySide/Apiextractor/archive/%{version}.tar.gz?/%{name}-%{version}.tar.gz
+#Source0Download: https://github.com/PySide/Apiextractor/releases
+Source0:	https://github.com/PySide/Apiextractor/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	62192889eed581edb7e755cf4be054b2
 URL:		https://github.com/PySide/Apiextractor
 BuildRequires:	QtCore-devel >= 4.5.0
@@ -18,6 +19,7 @@ BuildRequires:	QtXmlPatterns-devel >= 4.5.0
 BuildRequires:	cmake >= 2.6
 BuildRequires:	libxml2-devel >= 1:2.6.32
 BuildRequires:	libxslt-devel >= 1.1.19
+BuildRequires:	rpm-build >= 4.6
 %{?with_apidocs:BuildRequires:	sphinx-pdg}
 Requires:	QtCore >= 4.5.0
 Requires:	libxml2 >= 1:2.6.32
@@ -47,6 +49,7 @@ Pliki nagłówkowe biblioteki ApiExtractor.
 Summary:	ApiExtractor API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki ApiExtractor
 Group:		Documentation
+BuildArch:	noarch
 
 %description apidocs
 ApiExtractor API documentation.
