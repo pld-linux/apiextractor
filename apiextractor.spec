@@ -6,7 +6,7 @@ Summary:	Qt4 Binding Generator library
 Summary(pl.UTF-8):	Biblioteka do generowania wiązań Qt4
 Name:		apiextractor
 Version:	0.10.10
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Libraries
 #Source0Download: https://github.com/PySide/Apiextractor/releases
